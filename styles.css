@@ -1,0 +1,120 @@
+/* Общий стиль для всего документа */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Очень темный фон */
+    color: white; /* Белый текст по умолчанию для контраста */
+    margin: 0;
+    padding: 0;
+}
+
+/* Контейнер для основного контента */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1e1e1e; /* Темный фон для контейнера */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Темная тень */
+    border-radius: 10px;
+}
+
+/* Стиль для заголовков */
+h1 {
+    color: #f1f1f1; /* Светлый цвет для заголовка "Список задач" */
+}
+
+/* Стиль для добавления новой задачи */
+.task-section2 {
+    margin-bottom: 20px;
+}
+
+/* Стиль для поля ввода и кнопки добавления задачи */
+input[type="text"] {
+    padding: 10px;
+    width: calc(30% - 120px);
+    margin-right: 10px;
+    background-color: #333333; /* Темный фон для поля ввода */
+    color: white; /* Белый цвет текста в поле */
+    border: 1px solid #555555; /* Серая рамка */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.797);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d6139c;
+}
+
+/* Стиль для кнопки Очистить */
+.clear-button {
+    padding: 10px 20px;
+    background-color: rgb(30, 184, 10);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.clear-button:hover {
+    background-color: #f6e81f;
+}
+
+/* Стиль для области с задачами */
+.task-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.task-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 5px;
+    padding: 10px;
+    background-color: #2c2c2c; /* Темный фон для каждой области с задачами */
+    border-radius: 8px;
+}
+
+/* Стиль для разных типов задач */
+.back {
+    background-color: #fb2c2c;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.process {
+    background-color: #007a90d8;
+    color: rgb(136, 138, 255);
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #735af4;
+    border-radius: 5px;
+}
+
+.ready {
+    background-color: #008705d8;
+    color: rgb(136, 255, 140);
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #5af45a;
+    border-radius: 5px;
+}
+
+.basket {
+    background-color: #000287d8;
+    color: rgb(255, 136, 136);
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #f45a64;
+    border-radius: 5px;
+}
+
+/* Стиль для списка задач */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
