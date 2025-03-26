@@ -8,7 +8,7 @@ body {
 }
 
 /* Контейнер для основного контента */
-.container {
+.main-container {
     width: 90%;
     margin: 0 auto;
     padding: 20px;
@@ -18,12 +18,12 @@ body {
 }
 
 /* Стиль для заголовков */
-h1 {
+.header-name {
     color: #f1f1f1; /* Светлый цвет для заголовка "Список задач" */
 }
 
 /* Стиль для добавления новой задачи */
-.task-section2 {
+.add-task-section {
     margin-bottom: 20px;
 }
 
@@ -50,7 +50,7 @@ button:hover {
 }
 
 /* Стиль для кнопки Очистить */
-.clear-button {
+.clear-trash-button {
     padding: 10px 20px;
     background-color: rgb(30, 184, 10);
     color: white;
@@ -58,18 +58,18 @@ button:hover {
     cursor: pointer;
 }
 
-.clear-button:hover {
+.clear-trash-button:hover {
     background-color: #f6e81f;
 }
 
 /* Стиль для области с задачами */
-.task-container {
+.task-list-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.task-section {
+.task-list {
     flex: 1;
     min-width: 200px;
     margin: 5px;
@@ -79,14 +79,23 @@ button:hover {
 }
 
 /* Стиль для разных типов задач */
-.back {
+.backlog-title {
     background-color: #fb2c2c;
     margin: 10px 0;
     padding: 15px;
     border-radius: 5px;
 }
 
-.process {
+.backlog-item {
+    background-color: #fb2c2c;
+    color: white; /* Цвет текста для задач в Бэклоге */
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Стиль для задач в процессе */
+.in-progress-title {
     background-color: #007a90d8;
     color: rgb(136, 138, 255);
     margin: 5px 0;
@@ -95,7 +104,16 @@ button:hover {
     border-radius: 5px;
 }
 
-.ready {
+.in-progress-item {
+    background-color: #007a90d8;
+    color: rgb(136, 138, 255); /* Цвет текста для задач в процессе */
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Стиль для готовых задач */
+.completed-title {
     background-color: #008705d8;
     color: rgb(136, 255, 140);
     margin: 5px 0;
@@ -104,12 +122,29 @@ button:hover {
     border-radius: 5px;
 }
 
-.basket {
+.completed-item {
+    background-color: #008705d8;
+    color: rgb(136, 255, 140); /* Цвет текста для готовых задач */
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Стиль для задач в корзине */
+.trash-title {
     background-color: #000287d8;
     color: rgb(255, 136, 136);
     margin: 5px 0;
     padding: 10px;
     border: 1px solid #f45a64;
+    border-radius: 5px;
+}
+
+.trash-item {
+    background-color: #000287d8;
+    color: rgb(255, 136, 136); /* Цвет текста для задач в корзине */
+    padding: 10px;
+    margin: 5px 0;
     border-radius: 5px;
 }
 
