@@ -7,48 +7,40 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Заголовок "Список задач" -->
-        <h1 class="name">Список задач</h1>
+    <div class="main-container">
+        <h1 class="header-name">Список задач</h1>
         
-        <div class="task-section2">
+        <div class="add-task-section">
             <h2>Новая задача</h2>
             <input type="text" id="new-task" placeholder="Название задачи...">
-            <button id="add-task">+ Добавить</button>
+            <button id="add-task-button">+ Добавить</button>
         </div>
 
-        <div class="task-container">
-            <div class="task-section">
-                <h2 class="back">Бэклог</h2>
-                <ul id="backlog">
-                    <li class="back">Выучить JS</li>
-                    <li class="back">Выучить React</li>
-                    <li class="back">Сделать домашку</li>
-                </ul>
+        <div class="task-list-container">
+            <div class="task-list">
+                <h2 class="backlog-title">Бэклог</h2>
+                <div class="backlog-item">Выучить JS</div>
+                <div class="backlog-item">Выучить React</div>
+                <div class="backlog-item">Сделать домашку</div>
             </div>
 
-            <div class="task-section">
-                <h2 class="process">В процессе</h2>
-                <ul id="learn-js">
-                    <li class="process">Выпить смузи</li>
-                    <li class="process">Попить воды</li>
-                </ul>
+            <div class="task-list">
+                <h2 class="in-progress-title">В процессе</h2>
+                <div class="in-progress-item">Выпить смузи</div>
+                <div class="in-progress-item">Попить воды</div>
             </div>
 
-            <div class="task-section">
-                <h2 class="ready">Готово</h2>
-                <ul id="learn-react">
-                    <li class="ready">Позвонить маме</li>
-                    <li class="ready">Погладить кота</li>
-                </ul>
+            <div class="task-list">
+                <h2 class="completed-title">Готово</h2>
+                <div class="completed-item">Позвонить маме</div>
+                <div class="completed-item">Погладить кота</div>
             </div>
-            <div class="task-section">
-                <h2 class="basket">Корзина</h2>
-                <ul id="homework">
-                    <li class="basket">Сходить погулять</li>
-                    <li class="basket">Прочитать Войну и Мир</li>
-                </ul>
-                <button class="clear-button">X Очистить</button>
+
+            <div class="task-list">
+                <h2 class="trash-title">Корзина</h2>
+                <div class="trash-item">Сходить погулять</div>
+                <div class="trash-item">Прочитать Войну и Мир</div>
+                <button class="clear-trash-button">X Очистить</button>
             </div>
         </div>
     </div>
