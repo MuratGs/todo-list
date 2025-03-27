@@ -61,17 +61,18 @@ button {
 }
 
 button:hover {
-    background-color: #d6139c;
+    background-color: #f34c0a;
 }
 
-/* Стиль для кнопки Очистить */
-.clear-trash-button {
-    padding: 10px 20px;
-    background-color: rgb(30, 184, 10);
-    color: white;
-    border: none;
-    cursor: pointer;
+.task-btns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    
 }
+
 
 .clear-trash-button:hover {
     background-color: #f6e81f;
