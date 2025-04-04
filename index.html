@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Валиев Мурат</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 >Список задач</h1>
+        </header>
+        
+        
+        <div class="task-section">
+            <h2>Новая задача</h2>
+            <input type="text" id="new-task" placeholder="Название задачи...">
+            <button id="add-task">+ Добавить</button>
+        </div>
+
+        <div class="task-container">
+            <div class="task-section">
+                <h2 class="backName">Бэклог</h2>
+                <ul id="backlog">
+                    <li class="back">Выучить JS</li>
+                    <li class="back">Выучить React</li>
+                    <li class="back">Сделать домашку</li>
+                </ul>
+            </div>
+
+            <div class="task-section">
+                <h2 class="processName">В процессе</h2>
+                <ul id="learn-js">
+                    <li class="process">Выпить смузи</li>
+                    <li class="process">Попить воды</li>
+                </ul>
+            </div>
+
+            <div class="task-section">
+                <h2 class="readyName">Готово</h2>
+                <ul id="learn-react">
+                    <li class="ready">Позвонить маме</li>
+                    <li class="ready">Погладить кота</li>
+                </ul>
+            </div>
+
+            <div class="task-section">
+                <h2 class="basketName">Корзина</h2>
+                <ul id="homework">
+                    <li class="basket">Сходить погулять</li>
+                    <li class="basket">Прочитать Войну и Мир</li>
+                </ul>
+                <button class="clear-button">X Очистить</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
